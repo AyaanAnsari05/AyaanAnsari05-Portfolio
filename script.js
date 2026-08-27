@@ -717,38 +717,3 @@ window.addEventListener("beforeunload", () => {
   }
 
 });
-         
-
-    
-      
-      
-
-
-    if (user) {
-
-      message.innerHTML = `
-        <div class="ayaan-bubble ayaan-user-bubble">
-          ${escapeHTML(text)}
-        </div>
-      `;
-
-    } else {
-
-      message.innerHTML = `
-        <div class="ayaan-message-avatar">
-          ✦
-        </div>
-
-        <div class="ayaan-bubble">
-          ${text}
-        </div>
-      `;
-
-    }
-
-
-    messages.appendChild(message);
-
-    scrollMessages();
-
-  }
