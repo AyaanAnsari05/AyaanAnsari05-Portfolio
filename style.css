@@ -1313,51 +1313,47 @@ footer small {
 
   footer p,
   f
-/* WhatsApp Contact Card */
-
-.contact-card {
+.social-link {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 18px 22px;
-    border: 1px solid var(--line);
+    gap: 14px;
+    width: 100%;
+    max-width: 280px;
+    padding: 16px 18px;
     background: var(--surface);
+    border: 1px solid var(--line);
     color: var(--text);
     text-decoration: none;
-    transition: 
-        transform .3s ease,
-        border-color .3s ease,
-        background .3s ease;
-    cursor: pointer;
+    transition: all .35s ease;
+}
+
+.social-link:hover {
+    border-color: var(--line-strong);
+    transform: translateY(-4px);
 }
 
 
-.contact-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--white);
-}
-
-
-.contact-icon {
-    width: 42px;
-    height: 42px;
+.social-icon {
+    width: 38px;
+    height: 38px;
     border: 1px solid var(--line-strong);
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 18px;
 }
 
 
-.contact-card h3 {
-    margin: 0;
-    font-size: 14px;
-    letter-spacing: .05em;
+.social-link span:last-child {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    letter-spacing: .08em;
 }
 
 
-.contact-card p {
-    margin: 4px 0 0;
+.social-link small {
     color: var(--muted);
-    font-size: 11px;
+    font-size: 10px;
+    margin-top: 4px;
+    letter-spacing: .05em;
 }
